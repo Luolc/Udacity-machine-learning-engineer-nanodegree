@@ -11958,9 +11958,9 @@ Standard deviation of prices: $165,171.13
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
 <ul>
-<li>An increase in the value of 'RM' would lead to an <strong>increase</strong> in the value of 'MEDV'</li>
-<li>An increase in the value of 'LSTAT' would lead to an <strong>decrease</strong> in the value of 'MEDV'</li>
-<li>An increase in the value of 'PTRATIO' would lead to an <strong>decrease</strong> in the value of 'MEDV'</li>
+<li>An increase in the value of 'RM' would lead to an <strong>increase</strong> in the value of 'MEDV'. More rooms take place more area, which usually means higher price.</li>
+<li>An increase in the value of 'LSTAT' would lead to an <strong>decrease</strong> in the value of 'MEDV'. Obviously "lower class" people are more likely to buy cheap houses. If a neighborhood has a higher proportion of "lower class" people, the average price of houses here is more likely to be lower. </li>
+<li>An increase in the value of 'PTRATIO' would lead to an <strong>decrease</strong> in the value of 'MEDV'. A lower ratio of students to teachers indicates a higher level of the school. A high level school in the neighborhood is a great advantage for the people living in, for it is more convenient for there children to have high quality education. So the lower the ratio, the higher the price.</li>
 </ul>
 
 </div>
@@ -13859,7 +13859,7 @@ SUVORK5CYII=
     <span class="n">regressor</span> <span class="o">=</span> <span class="n">DecisionTreeRegressor</span><span class="p">()</span>
 
     <span class="c1"># TODO: Create a dictionary for the parameter &#39;max_depth&#39; with a range from 1 to 10</span>
-    <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)]}</span>
+    <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)}</span>
 
     <span class="c1"># TODO: Transform &#39;performance_metric&#39; into a scoring function using &#39;make_scorer&#39; </span>
     <span class="n">scoring_fnc</span> <span class="o">=</span> <span class="n">make_scorer</span><span class="p">(</span><span class="n">performance_metric</span><span class="p">)</span>
